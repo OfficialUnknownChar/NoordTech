@@ -1,0 +1,26 @@
+{
+  "dependencies": {
+    "@tailwindcss/cli": "^4.3.3",
+    "tailwindcss": "^4.3.3"
+  },
+  "name": "noordtech",
+  "version": "1.0.0",
+  "description": "Portfolio: One page webiste",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "css:dev": "npx @tailwindcss/cli -i ./dist/css/input.css -o ./dist/css/main.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OfficialUnknownChar/NoordTech.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/OfficialUnknownChar/NoordTech/issues"
+  },
+  "homepage": "https://github.com/OfficialUnknownChar/NoordTech#readme"
+}
