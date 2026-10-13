@@ -5,13 +5,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-Frame-Options" content="DENY">
     <meta name="referrer" content="no-referrer">
-    <meta name="robots" content="noindex, nofollow, noimageindex, noarchive, nocache, nosnippet">
+    <meta name="robots" content="index, follow">
     <link rel="icon" type="image/png" href="favicon.png">
     <link rel="stylesheet" href="./dist/css/main.css">
     <title>NoordTech</title>
 </head>
 <body>
-    <header></header>
+
+    <!-- HEADER -->
+    <header class="sticky top-0 z-50 border-b border-gray-100 bg-white">
+        <nav class="mx-auto flex h-20 max-w-7xl items-center justify-between px-6 lg:px-8" aria-label="Hoofdnavigatie">
+
+            <!-- LOGO -->
+            <a href="#home" class="flex items-center gap-2">
+                <img src="./dist/images/logo_desktop.png" alt="NoordTech" class="h-18 w-auto">
+            </a>
+
+            <!-- DESKTOP NAV -->
+            <ul class="hidden items-center gap-9 md:flex">
+                <li><a href="#diensten" class="text-sm font-medium text-[#0B1B2B] transition-colors hover:text-[#D97745]">Diensten</a></li>
+                <li><a href="#projecten" class="text-sm font-medium text-[#0B1B2B] transition-colors hover:text-[#D97745]">Projecten</a></li>
+                <li><a href="#over" class="text-sm font-medium text-[#0B1B2B] transition-colors hover:text-[#D97745]">Over mij</a></li>
+                <li><a href="#contact" class="text-sm font-medium text-[#0B1B2B] transition-colors hover:text-[#D97745]">Contact</a></li>
+            </ul>
+
+            <a href="#contact" class="hidden rounded-md bg-[#D97745] px-5 py-3 text-sm font-semibold text-white transition-colors hover:bg-[#BE6030] md:inline-flex">Neem contact op <span class="ml-2" aria-hidden="true">→</span></a>
+
+            <button id="menu-toggle" type="button" class="flex items-center justify-center p-2 text-[#0B1B2B] md:hidden" aria-label="Open navigatiemenu" aria-expanded="false" aria-controls="mobile-menu">
+                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M4 7h16M4 12h16M4 17h16"/>
+                </svg>
+            </button>
+
+        </nav>
+
+        <!-- MOBILE NAV -->
+        <div id="mobile-menu" class="hidden border-t border-gray-100 bg-[#0B1B2B] md:hidden">
+            <nav class="mx-auto max-w-7xl px-6 py-8" aria-label="Mobiele navigatie">
+                <ul class="flex flex-col gap-6">
+                    <li><a href="#home" class="mobile-link block text-base text-white">Home</a></li>
+                    <li><a href="#diensten" class="mobile-link block text-base text-white">Diensten</a></li>
+                    <li><a href="#projecten" class="mobile-link block text-base text-white">Projecten</a></li>
+                    <li><a href="#over" class="mobile-link block text-base text-white">Over mij</a></li>
+                    <li><a href="#contact" class="mobile-link block text-base text-white">Contact</a></li>
+                </ul>
+
+                <a href="#contact" class="mobile-link mt-8 flex items-center justify-center rounded-md bg-[#D97745] px-5 py-3 font-semibold text-white">Neem contact op <span class="ml-2" aria-hidden="true">→</span></a>
+            </nav>
+        </div>
+    </header>
+
     <main></main>
     <footer></footer>
 </body>
